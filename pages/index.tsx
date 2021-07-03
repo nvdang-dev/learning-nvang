@@ -14,12 +14,12 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="https://nvdang.dev" className={styles.card}>
             <h2>Learning  &rarr;</h2>
-            <p>Learning information</p>
+            <p>Information</p>
           </a>
 
           <a href="https://nvdang.dev" className={styles.card}>
             <h2>Testing &rarr;</h2>
-            <p>Testing course with quizzes!</p>
+            <p>Quizzes!</p>
           </a>
 
           <a
@@ -36,7 +36,7 @@ export default function Home() {
           >
             <h2>Contact &rarr;</h2>
             <p>
-              Go to nvdang.dev
+            nvdang.dev
             </p>
           </a>
         </div>

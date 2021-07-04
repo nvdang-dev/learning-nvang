@@ -1,2 +1,30 @@
 @import 'tailwindcss/tailwind.css';
-@import './variables.scss';
+ @import './variables.scss';
+@import './Navbar.module.scss';
+@import './Sidebar.module.scss';
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - 3rem);
+    .sidebar {
+        float: left;
+        width: 10rem;
+        margin: 1rem 0 1rem 0;
+        border-radius: 1rem;
+    }
+    .content{
+        float: right;
+        width: calc(100% - 10rem);
+        margin: 1rem;
+        background-color:$card-background-color;
+        border-radius: 1rem;
+    }
+}
+#__next {
+    height: 100%;
+}

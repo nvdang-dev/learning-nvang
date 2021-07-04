@@ -7,19 +7,13 @@
     justify-content: space-between;
     .navbar-start {
         float: left;
-        width: 10rem;
+        width: 50%;
         background-color: royalblue;
-        height: 100%;
-    }
-    .navbar-center {
-        float: left;
-        width: calc((100% - 10rem)/2);
-        background-color: sandybrown;
         height: 100%;
     }
     .navbar-end {
         float: right;
-        width:  calc((100% - 10rem)/2);
+        width:  50%;
         background-color: seagreen;
         height: 100%;
     }

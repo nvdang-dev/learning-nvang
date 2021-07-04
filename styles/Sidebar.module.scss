@@ -2,22 +2,40 @@
 .sidebar-container {
     width: 10rem;
     height: 100%;
-    // background-color: $blue-light--color;
     display: flex;
     flex-direction: column;
+    .sidebar-menu {
+        width: 100%;
+        background-color: white;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .sidebar-menu-title {
+            color: $text-color;
+            font-weight: bold;
+        }
+        .sidebar-menu-icon {
+            .sidebar-menu-icon-btn {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
     .sidebar-information {
         width: 100%;
         background-color: royalblue;
-        height: 30%;
+        height: calc((100% - 3rem)/3);
     }
     .sidebar-study {
         width: 100%;
         background-color: sandybrown;
-        height: 20%;
+        height: calc((100% - 3rem)/3);
     }
     .sidebar-support {
         width:  100%;
         background-color: seagreen;
-        height: 50%;
+        height: calc((100% - 3rem)/3);
     }
 }

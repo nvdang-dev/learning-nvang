@@ -1,5 +1,5 @@
 @import 'tailwindcss/tailwind.css';
- @import './variables.scss';
+@import './variables.scss';
 @import './Navbar.module.scss';
 @import './Sidebar.module.scss';
 
@@ -7,24 +7,59 @@ body {
     min-height: 100vh;
     height: 100vh;
 }
-.main {
+.layout-container {
     display: flex;
     flex-direction: row;
-    height: calc(100% - 3rem);
-    .sidebar {
+    height: 100%;
+    .layout-sidebar {
         float: left;
+        margin: 0 1rem 0 1rem;
         width: 10rem;
-        margin: 1rem 0 1rem 0;
+        background-color: seagreen;
         border-radius: 1rem;
     }
-    .content{
+    .layout-content{
         float: right;
         width: calc(100% - 10rem);
-        margin: 1rem;
+        // margin: 1rem;
         background-color:$card-background-color;
         border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        .layout-navbar {
+            width: 100%;
+        }
+        .layout-main {
+            width: 100%;
+        }
     }
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .layout-container {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        .layout-sidebar {
+            display: none;
+        }
+        .layout-content{
+            float: left;
+            width: 100%;
+            margin: 1rem;
+            background-color:$card-background-color;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            .layout-navbar {
+                width: 100%;
+            }
+            .layout-main {
+                width: 100%;
+            }
+        }
+    }
+  }
 #__next {
     height: 100%;
 }

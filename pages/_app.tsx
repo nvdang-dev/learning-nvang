@@ -21,8 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
       </Head>
-      <div style={{ height: '100%'}} >
-        <Navbar />
+      <div style={{ height: '100%',width: '100%'}} >
         <Main>
           <Component {...pageProps} />
         </Main>

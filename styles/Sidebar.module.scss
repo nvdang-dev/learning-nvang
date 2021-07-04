@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 .sidebar-container {
     width: 10rem;
     height: 100%;
@@ -24,18 +24,37 @@
         }
     }
     .sidebar-information {
+        margin-top: 1rem;
         width: 100%;
-        background-color: royalblue;
-        height: calc((100% - 3rem)/3);
+        background-color: white;
+        height: 10rem;
+        margin-bottom: 1.5rem;
     }
     .sidebar-study {
         width: 100%;
-        background-color: sandybrown;
-        height: calc((100% - 3rem)/3);
-    }
-    .sidebar-support {
-        width:  100%;
-        background-color: seagreen;
-        height: calc((100% - 3rem)/3);
+        background-color: white;
+        height: 10rem;
+        .sidebar-study-content {
+            .sidebar-study-content-title {
+                display: flex;
+                flex-direction: row;
+                font-size: 1rem;
+                font-weight: 500;
+                .sidebar-study-content-title-icon {
+                    display: flex;
+                    align-items: center;
+                }
+                
+            }
+            .sidebar-study-content-data {
+              margin-left: 1rem;
+              .sidebar-study-content-data-li {
+                  font-size: 0.8rem;
+                  margin-top: 1rem;
+                  margin-bottom: 1rem;
+              }
+                
+            }
+        }
     }
 }

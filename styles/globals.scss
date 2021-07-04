@@ -1,7 +1,8 @@
-@import 'tailwindcss/tailwind.css';
-@import './common.scss';
-@import './Navbar.module.scss';
-@import './Sidebar.module.scss';
+@import "tailwindcss/tailwind.css";
+@import "./common.scss";
+@import "./Navbar.module.scss";
+@import "./Sidebar.module.scss";
+@import "./Card.module.scss";
 
 #__next {
     height: 100%;

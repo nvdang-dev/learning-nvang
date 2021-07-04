@@ -1,11 +1,11 @@
-@import './variables.scss';
+@import "./variables.scss";
 .navbar-container {
     height: 3rem;
     // background-color: $blue-light--color;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
     .navbar-start {
         float: left;
         width: 50%;
@@ -17,7 +17,7 @@
     }
     .navbar-end {
         float: right;
-        width:  50%;
+        width: 50%;
         background-color: white;
         height: 100%;
         display: flex;
@@ -40,10 +40,10 @@
         flex-direction: column;
         justify-content: space-between;
         .navbar-start {
-           display: none;
+            display: none;
         }
         .navbar-end {
-            width:  100%;
+            width: 100%;
             background-color: white;
             height: 100%;
             display: flex;
@@ -56,4 +56,4 @@
             }
         }
     }
-  }
+}

@@ -1,7 +1,94 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .card {
     background-color: $card-background-color;
     display: flex;
     flex-direction: column;
+    height: 10rem;
+    border-radius: 1rem;
+    .card-infor-basic {
+        height: 33%;
+        .card-infor-basic-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            .card-infor-basic-content-value {
+                margin-left: 0.2rem;
+                margin-right: 0.2rem;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .card-progress-bar {
+        height: 1rem;
+        background-color: $card-background-color;
+        height: 33%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .card-progress-bar-content {
+            width: 100%;
+            .card-progress-bar-point {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                .card-progress-bar-point-wrap {
+                    font-size: 0.8rem;
+                    .card-progress-bar-point-number {
+                        color: $green-solid-color ;
+                    }
+                }
+            }
+            .card-progress-bar-element {
+                display: flex;
+                flex-direction: row;
+                height: 0.4rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                .card-progress-bar-element-start {
+                    background-color: $green-solid-color;
+                    float: left;
+                    height: 100%;
+                    width: 30%;
+                    border-radius: 1rem;
+                }
+                .card-progress-bar-element-center {
+                    background-color: #dee8ec;
+                    float: left;
+                    height: 100%;
+                    width: 30%;
+                    border-right: 5px solid #b9cfd3;
+                    border-radius: 1rem;
+                }
+                .card-progress-bar-element-end {
+                    background-color: #dee8ec;
+                    float: right;
+                    height: 100%;
+                    width: 40%;
+                    border-right: 5px solid #b9cfd3;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+    .card-title {
+        display: flex;
+        height: 33%;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        justify-content: center;
+        .card-title-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    }
 }

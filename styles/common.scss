@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import "./variables.scss";
 body {
     min-height: 100vh;
     height: 100vh;
@@ -20,8 +20,8 @@ body {
     border-radius: 50%;
 }
 .btn-icon {
-    height:3.75rem;
-     margin-top: -20
+    height: 3.75rem;
+    margin-top: -20;
 }
 .layout-container {
     display: flex;
@@ -34,10 +34,10 @@ body {
         float: left;
         margin: 0 1rem 0 1rem;
         width: 10rem;
-        background-color: seagreen;
+        background-color: white;
         border-radius: 1rem;
     }
-    .layout-content{
+    .layout-content {
         float: right;
         width: calc(100% - 10rem);
         // margin: 1rem;
@@ -51,7 +51,7 @@ body {
         }
         .layout-main {
             width: 100%;
-            background-color:$card-background-color;
+            background-color: $card-background-color;
             height: 100%;
             border-radius: 1rem;
             margin-top: 1rem;
@@ -68,7 +68,7 @@ body {
         .layout-sidebar {
             display: none;
         }
-        .layout-content{
+        .layout-content {
             float: left;
             width: 100%;
             margin: 1rem;
@@ -78,15 +78,15 @@ body {
                 width: 100%;
             }
             .layout-main {
-            background-color:$card-background-color;
-            height: 100%;
-            border-radius: 1rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+                background-color: $card-background-color;
+                height: 100%;
+                border-radius: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
         }
     }
-  }
+}
 .badge {
     height: 18px;
     display: flex;

@@ -19,12 +19,17 @@ body {
 .avatar {
     border-radius: 50%;
 }
+.btn-icon {
+    height:3.75rem;
+     margin-top: -20
+}
 .layout-container {
     display: flex;
     flex-direction: row;
     height: 100%;
-    margin-right: 1rem;
+    // margin-right: 1rem;
     margin-bottom: 1rem;
+    width: 100%;
     .layout-sidebar {
         float: left;
         margin: 0 1rem 0 1rem;
@@ -40,6 +45,7 @@ body {
         // border-radius: 1rem;
         display: flex;
         flex-direction: column;
+        margin-right: 1rem;
         .layout-navbar {
             width: 100%;
         }
@@ -72,7 +78,7 @@ body {
                 width: 100%;
             }
             .layout-main {
-                background-color:$card-background-color;
+            background-color:$card-background-color;
             height: 100%;
             border-radius: 1rem;
             margin-top: 1rem;

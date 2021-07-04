@@ -16,19 +16,19 @@ export const Navbar = () => {
             </div>
             <div className='navbar-end'>
                 <div className='pr-2'>
-                    <button style={{height:60, marginTop: -20}}>
+                    <button className='btn-icon'>
                         <BiMessage size={20} color={'#3C3D4E'}/>
                         <Badge badgeContent='3'/>
                     </button>
                 </div>
                 <div  className='pr-2'>
-                    <button style={{height:60, marginTop: -20}}>
+                    <button className='btn-icon'>
                         <BiBell size={20} color={'#3C3D4E'}/>
                         <Badge badgeContent='5'/>
                     </button>
                 </div>
-                <div>
-                    <Image src={leo} width={30} height={30} className='avatar'/>
+                <div className='account-avatar'>
+                    <Image src={leo} width={30} height={30} className='avatar' role='button'/>
                 </div>
             </div>
         </header>

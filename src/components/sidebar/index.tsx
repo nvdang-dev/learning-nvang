@@ -9,7 +9,7 @@ export const SideBar = () => {
                 </div>
                 <div className='sidebar-menu-icon'>
                     <button className='sidebar-menu-icon-btn'>
-                        <MdKeyboardArrowLeft />  <MdMenu />
+                        <MdKeyboardArrowLeft size={20} color={'#3C3D4E'} />  <MdMenu size={20} color={'#3C3D4E'}/>
                     </button>
                 </div>
 

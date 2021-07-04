@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+.card {
+    background-color: $card-background-color;
+    display: flex;
+    flex-direction: column;
+}

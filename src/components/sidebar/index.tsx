@@ -1,5 +1,7 @@
 import { MdMenu, MdKeyboardArrowLeft, MdViewQuilt } from "react-icons/md";
 import { Card } from "../generic/card";
+import { RiHomeSmile2Fill } from "react-icons/ri";
+
 
 export const SideBar = () => {
     return (
@@ -29,13 +31,13 @@ export const SideBar = () => {
                         </div>
                     </div>
                     <div className='sidebar-study-content-data'>
-                        <div className='sidebar-study-content-data-li'>
+                        <div className='sidebar-study-content-data-li active' role='button'>
                             <span>All Tasks</span>
                         </div>
-                        <div className='sidebar-study-content-data-li'>
+                        <div className='sidebar-study-content-data-li' role='button'>
                             <span>Knowledge base</span>
                         </div>
-                        <div className='sidebar-study-content-data-li'>
+                        <div className='sidebar-study-content-data-li' role='button'>
                             <span>Rating</span>
                         </div>
                     </div>
@@ -45,17 +47,17 @@ export const SideBar = () => {
                 <div className='sidebar-study-content'>
                     <div className='sidebar-study-content-title'>
                         <div className='sidebar-study-content-title-icon'>
-                            <MdViewQuilt size={20} color={'#3C3D4E'} />
+                            <RiHomeSmile2Fill size={20} color={'#3C3D4E'} />
                         </div>
                         <div className='sidebar-study-content-title-text'>
                             <span>SUPPORT</span>
                         </div>
                     </div>
                     <div className='sidebar-study-content-data'>
-                        <div className='sidebar-study-content-data-li'>
+                        <div className='sidebar-study-content-data-li' role='button'>
                             <span>FQA</span>
                         </div>
-                        <div className='sidebar-study-content-data-li'>
+                        <div className='sidebar-study-content-data-li' role='button'>
                             <span>Ask a question</span>
                         </div>
                     </div>

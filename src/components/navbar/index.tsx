@@ -1,5 +1,5 @@
 import { MdBrightnessHigh, MdBrightnessLow } from "react-icons/md";
-import { BiBell, BiMessage } from "react-icons/bi";
+import { BiBell, BiMessageRounded } from "react-icons/bi";
 import Image from 'next/image'
 import leo from '../../../public/leo.jpeg'
 import { Badge } from "../generic/badge";
@@ -17,7 +17,7 @@ export const Navbar = () => {
             <div className='navbar-end'>
                 <div className='pr-2'>
                     <button className='btn-icon'>
-                        <BiMessage size={20} color={'#3C3D4E'}/>
+                        <BiMessageRounded size={20} color={'#3C3D4E'}/>
                         <Badge badgeContent='3'/>
                     </button>
                 </div>

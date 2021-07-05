@@ -43,17 +43,23 @@
                 .sidebar-study-content-title-icon {
                     display: flex;
                     align-items: center;
+                    margin-right: 0.5rem;
                 }
-                
             }
             .sidebar-study-content-data {
-              margin-left: 1rem;
-              .sidebar-study-content-data-li {
-                  font-size: 0.8rem;
-                  margin-top: 1rem;
-                  margin-bottom: 1rem;
-              }
-                
+                margin-left: 1rem;
+                .sidebar-study-content-data-li {
+                    font-size: 0.8rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    color: $text-blurred-color;
+                }
+                .sidebar-study-content-data-li:hover {
+                    color: $text-color;
+                }
+                .active {
+                    color: $text-color;
+                }
             }
         }
     }

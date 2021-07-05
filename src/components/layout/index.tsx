@@ -1,6 +1,7 @@
 import React from "react";
 import { SideBar } from '../sidebar';
 import { Navbar } from '../navbar';
+import { Content } from "../content";
 
 interface Props {
     children: JSX.Element
@@ -16,7 +17,8 @@ export default function Main({ children }: Props) {
                      <Navbar />
                 </div>
                 <main className='layout-main'>
-                    {children}
+                    <Content />
+                    {/* {children} */}
                 </main>
             </div>
     </div>

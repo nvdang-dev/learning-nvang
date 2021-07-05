@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
       <Head>
-        <title>Nguyễn Văn Đặng </title>
+        <title>Learning web by Dang Nguyen </title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Trang web của Nguyễn Văn Đặng" />
         <meta property="og:title" content="Về tôi - Trang web của Nguyễn Văn Đặng" />

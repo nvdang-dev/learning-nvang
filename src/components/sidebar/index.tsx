@@ -1,5 +1,5 @@
 import { MdMenu, MdKeyboardArrowLeft, MdViewQuilt } from "react-icons/md";
-import { Card } from "../generic/card";
+import { Card } from "../common/card";
 import { RiHomeSmile2Fill } from "react-icons/ri";
 
 

@@ -1,6 +1,6 @@
 
 import { MdCropSquare, MdAccessTime,MdKeyboardArrowDown } from "react-icons/md";
-import { Card } from "../generic/card";
+import { Card } from "../common/card";
 import { BsLightningFill } from "react-icons/bs";
 
 export const Content = () => {

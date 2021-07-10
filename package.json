@@ -16,6 +16,7 @@
     "sass": "^1.35.1"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.171",
     "@types/react": "17.0.13",
     "autoprefixer": "^10.2.6",
     "eslint": "7.29.0",

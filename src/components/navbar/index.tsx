@@ -1,4 +1,4 @@
-import { MdBrightnessHigh, MdBrightnessLow } from "react-icons/md";
+import { MdMenu } from "react-icons/md";
 import { BiBell, BiMessageRounded } from "react-icons/bi";
 import Image from 'next/image'
 import leo from '../../../public/leo.jpeg'
@@ -33,6 +33,11 @@ export const Navbar = () => {
                 </span>
             </div>
             <div className='navbar-end'>
+            <div className='pr-2' id='menumobile'>
+                    <button className='btn-icon'>
+                    <MdMenu size={20} color={'#3C3D4E'} style={{marginTop:10}} />
+                    </button>
+                </div>
                 <div className='pr-2'>
                     <button className='btn-icon'>
                         <BiMessageRounded size={20} color={'#3C3D4E'} />
@@ -44,14 +49,14 @@ export const Navbar = () => {
                         <BiBell size={20} color={'#3C3D4E'} />
                         <Badge badgeContent='5' />
                         <Dropdown open={Boolean(anchor)} anchor={anchor} onClose={onClose}>
-                            <div style={{backgroundColor:'#FCFCFD', borderRadius:'1rem'}}>
+                            <div style={{backgroundColor:'#FCFCFD', borderTopLeftRadius: '1rem', borderTopRightRadius: '1rem'}}>
                                 <div className='noti-row'>
                                     <div className='noti-icon'>
                                         <div className='icon-rounded'><AiFillHome color='#1cad91' /></div>
                                     </div>
                                     <div className='noti-text'>
-                                        <p><b>+8 points</b> for homework</p>
-                                        <p style={{ textAlign: 'start' }}>13 May</p>
+                                        <p style={{fontSize: 13}}><b>+8 points</b> for homework</p>
+                                        <p style={{ textAlign: 'start', fontSize:12 }}>13 May</p>
                                     </div>
                                 </div>
                             </div>

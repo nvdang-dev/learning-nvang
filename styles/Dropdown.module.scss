@@ -1,4 +1,7 @@
 @import "./variables.scss";
+#menumobile {
+  display: none;
+}
 .dropdown {
   position: relative;
   // display: contents;
@@ -49,4 +52,60 @@
   height: 50%;
   padding: 1rem;
   border-radius: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  #menumobile {
+    display: flex;
+  }
+  .dropdown {
+    position: relative;
+    // display: contents;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute !important;
+    background-color: white;
+    min-width: 16rem;
+    // border-radius: 0.7rem;
+    // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    // padding: 12px 0 12px 0;
+    z-index: 9999;
+    top: 3.5rem;
+    right: -5.55rem;
+    // border-color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    border-radius: 1rem;
+  }
+  .noti-row {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    // background-color: #FAFAFC;
+    height: 50%;
+    // border-top-left-radius: 1rem;
+    width: 100%;
+  }
+  .noti-icon {
+    margin-right: 0.5rem;
+  }
+  .icon-rounded {
+    background-color: $green-light-color;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 30px;
+    border-radius: 50%;
+  }
+  .noti-action {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
 }

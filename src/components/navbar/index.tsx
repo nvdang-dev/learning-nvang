@@ -7,9 +7,11 @@ import { Dropdown } from "../common/dropdown";
 import { useRef, useState } from "react";
 import { AiFillHome } from 'react-icons/ai'
 import _ from 'lodash'
+import { SideBarMobile } from "../sidebarMobile";
 
 export const Navbar = () => {
     const [anchor, setAnchor] = useState<any>(null)
+    const [openMenu, setOpenMenu ] = useState<boolean>(false)
     const refAnchor = useRef(null)
     const handleOpen = (e: React.MouseEvent<HTMLElement>) => {
         e.preventDefault();
@@ -22,8 +24,11 @@ export const Navbar = () => {
     const onClose = () => {
         setAnchor(null);
     }
+    const openMenuMobile =( )=>{
+        setOpenMenu(previous => !previous)
+    }
     return (
-        <header className='navbar-container'>
+        <header className='navbar-container dropdown' >
             <div className='navbar-start'>
                 <span className='text-large pr-1'>
                     Strategic marketing
@@ -34,7 +39,7 @@ export const Navbar = () => {
             </div>
             <div className='navbar-end'>
             <div className='pr-2' id='menumobile'>
-                    <button className='btn-icon'>
+                    <button className='btn-icon' onClick={openMenuMobile}>
                     <MdMenu size={20} color={'#3C3D4E'} style={{marginTop:10}} />
                     </button>
                 </div>
@@ -70,6 +75,7 @@ export const Navbar = () => {
                     <Image src={leo} width={30} height={30} className='avatar' role='button' />
                 </div>
             </div>
+            <SideBarMobile open={openMenu}/>
         </header>
     )
 }

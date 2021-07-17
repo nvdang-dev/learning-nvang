@@ -64,3 +64,69 @@
         }
     }
 }
+
+.sidebar-container-mobile {
+    width: 10rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    position: absolute !important;
+    .sidebar-menu-mobile {
+        width: 100%;
+        background-color: white;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .sidebar-menu-title-mobile {
+            color: $text-color;
+            font-weight: bold;
+        }
+        .sidebar-menu-icon-mobile {
+            .sidebar-menu-icon-btn-mobile {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+    .sidebar-information-mobile {
+        width: 100%;
+        background-color: white;
+        height: 10rem;
+    }
+    .sidebar-study-mobile {
+        width: 100%;
+        background-color: white;
+        height: 10rem;
+        .sidebar-study-content-mobile {
+            .sidebar-study-content-title-mobile {
+                display: flex;
+                flex-direction: row;
+                font-size: 1rem;
+                font-weight: 500;
+                .sidebar-study-content-title-icon-mobile {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 0.5rem;
+                }
+            }
+            .sidebar-study-content-data-mobile {
+                margin-left: 1rem;
+                .sidebar-study-content-data-li-mobile {
+                    font-size: 0.8rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    color: $text-blurred-color;
+                }
+                .sidebar-study-content-data-li:hover {
+                    color: $text-color;
+                }
+                .active {
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}

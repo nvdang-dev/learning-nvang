@@ -117,7 +117,7 @@ export const Content = () => {
                 </div>
                 <div className='content-col-3'>
                     <div className='content-card-title'>
-                        <span>SOON: 10</span>
+                        <span>SOON: 7</span>
                     </div>
                     <div className='content-card-data'>
                         <div className='content-card-data-title'>
